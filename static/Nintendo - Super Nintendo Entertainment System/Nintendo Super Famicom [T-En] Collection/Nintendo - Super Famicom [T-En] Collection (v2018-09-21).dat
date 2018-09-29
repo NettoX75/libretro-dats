@@ -6,8 +6,8 @@
 		<name>Nintendo - Super Famicom [T-En] Collection</name>
 		<description>Nintendo - Super Famicom [T-En] Collection</description>
 		<category>Standard DatFile</category>
-		<version>2018-09-06</version>
-		<date>2018-09-06</date>
+		<version>2018-09-21</version>
+		<date>2018-09-21</date>
 		<author>Retroplay</author>
 		<email>-insert email-</email>
 		<homepage>-insert homepage-</homepage>
@@ -31,6 +31,7 @@
 		<rom name="Alcahest (Japan) [T-En by FH v1.0b].txt" size="5348" crc="fd18bf02" md5="0eb56df909baa2e14a7d04887e5fc54b" sha1="1041ff8728104022ef639da1e9423d85c8cec375"/>
 		<rom name="Amazing Spider-Man, The - Lethal Foes (Japan) [T-En by Kepeb v1.0].txt" size="949" crc="9257feac" md5="4e360f78157dbf4f28f80de92cbb05cd" sha1="2ebaef4b6a6d77c5d38672cb2ac60da16a605ad5"/>
 		<rom name="Ancient Magic - Bazoo! World of Magic (Japan) [T-En by Aeon Genesis v1.00] [n].txt" size="2655" crc="d486e36c" md5="3a6564a87c0886423f5bda89ccb41283" sha1="a04a5f92781bcb5714b01f22df4dc53e8bbfb40f"/>
+		<rom name="Aretha (Japan) [T-En by Dynamic Designs v1.00].txt" size="6953" crc="dfa62d97" md5="e295889a20d0496691d10ded006df722" sha1="23e7811ce11b1220cc8802ec0c0a909692c58c8b"/>
 		<rom name="Armored Police Metal Jack (Japan) [T-En by MrRichard999+FlashPV+Jink640 v2.0] [n].txt" size="784" crc="f13c35d8" md5="b187bec9e28eca2216e9078c89952dc2" sha1="54290888bed43ab18bbeb11ed352d45e74a0ae37"/>
 		<rom name="Assault Suits Valken (Japan) [T-En by Aeon Genesis v1.00] [n].txt" size="3487" crc="1b62ba91" md5="f97219db85199c210cb31e5dc1553d55" sha1="210fd31446aa98bbb1cf0e7e0b7b97defdb7923e"/>
 		<rom name="Bahamut Lagoon (Japan) [T-En by DeJap+Neill Corlett+Tomato v1.3] (1).txt" size="115" crc="e0f37792" md5="ac7df587172fb8af23c2476f229aa97e" sha1="1deafc1c7595919f216b5080c3957bf80bc2b5f5"/>
@@ -141,7 +142,7 @@
 		<rom name="Kunio's Dodge Ball (Japan) [T-En by Azelistic v1.0] [n].txt" size="33734" crc="a1fda7b6" md5="1108dc9346b251f35dc7afc6a3ce01fd" sha1="61f4a909e14407e0e6934f81a3dad97ee85309a8"/>
 		<rom name="La Wares (Japan) [T-En by Dynamic Designs v1.00].txt" size="12966" crc="a32af5b0" md5="474b179a36d9d673757a4425eb7fa565" sha1="118953f8a672d1f8818ea5acfc2262bedb653f19"/>
 		<rom name="Langrisser, Der (Japan) (Rev 1) [T-En by byuu+Derrick Sobodash v1.3].txt" size="8646" crc="9506063f" md5="91dda3f9141e7afd61d47010005df334" sha1="dee52c93652fec51edf996f74cd7769d87f57f0a"/>
-		<rom name="Laplace no Ma (Japan) [T-En by Aeon Genesis v0.95b].txt" size="2863" crc="2c0b5309" md5="e9439d0cecd2b637641376881813eb80" sha1="22e1400b1f25d3c3bfed5df94813f94fcdf8a1b7"/>
+		<rom name="Laplace's Demon (Japan) [T-En by Aeon Genesis v2.0] [n].txt" size="3738" crc="d1d45c85" md5="b200b558fbc8d85cb1e3d99057407845" sha1="61ee06ef2bc03a3b301e49fb35e5e7091e8f119d"/>
 		<rom name="Last Bible III (Japan) [T-En by Tom v7.0].txt" size="3007" crc="ef584e06" md5="7988a4e0d9049363954118727e670677" sha1="8a62864fb031b8dc075891652abd858840df4041"/>
 		<rom name="Lennus II - The Apostles of the Seals (Japan) [T-En by Dynamic Designs v1.04] [n] - Spoiler Hints and Tips.doc" size="53760" crc="459b83de" md5="f816b71ddc4a5fbc2236a3162ee628b9" sha1="afa747d0a70073ab2a48cd979a986190b116194c"/>
 		<rom name="Lennus II - The Apostles of the Seals (Japan) [T-En by Dynamic Designs v1.04] [n].doc" size="86528" crc="b09aa2bd" md5="30b3e6ca8324cb47519f87d5d5a42fd1" sha1="62ed2de89f5b1de0185e80ea1946dd7ef4be8b1b"/>
@@ -297,6 +298,10 @@
 		<description>Arabian Nights - Sabaku no Seirei Ou [T-En by LostTemplar v1.0]</description>
 		<rom name="Arabian Nights - Sabaku no Seirei Ou [T-En by LostTemplar v1.0].sfc" size="3145728" crc="be092358" md5="fb6227cd750c6fc4beade6db8a55e3b8" sha1="6528f90602edb8772698c082a1cb3e0c9a033165"/>
 	</machine>
+	<machine name="Aretha (Japan) [T-En by Dynamic Designs v1.00]">
+		<description>Aretha (Japan) [T-En by Dynamic Designs v1.00]</description>
+		<rom name="Aretha (Japan) [T-En by Dynamic Designs v1.00].sfc" size="2621440" crc="69abc8d0" md5="92ba221cfcfecb2234e89f22284ed8f7" sha1="8db637a7c352e8c73f21585431e3af1ec14540fb"/>
+	</machine>
 	<machine name="Armored Police Metal Jack (Japan) [T-En by MrRichard999+FlashPV+Jink640 v2.0] [n]">
 		<description>Armored Police Metal Jack (Japan) [T-En by MrRichard999+FlashPV+Jink640 v2.0] [n]</description>
 		<rom name="Armored Police Metal Jack (Japan) [T-En by MrRichard999+FlashPV+Jink640 v2.0] [n].sfc" size="1048576" crc="1b356ce3" md5="48dbfc9d5799e9b015ddb8b6e0fbb3a4" sha1="6dc4d8807f5a0a7eb1803170e1c36c84637555d6"/>
@@ -449,6 +454,10 @@
 	<machine name="Demon Child Zenki - Battle Raiden (Japan) [T-En by Dynamic Designs v1.00] [n]">
 		<description>Demon Child Zenki - Battle Raiden (Japan) [T-En by Dynamic Designs v1.00] [n]</description>
 		<rom name="Demon Child Zenki - Battle Raiden (Japan) [T-En by Dynamic Designs v1.00] [n].sfc" size="2097152" crc="0db880c8" md5="9c0e97741d4558578c57e3f79e0adb44" sha1="4adc0762176695742796765c4c12903e7197d9cf"/>
+	</machine>
+	<machine name="Densetsu no Ogre Battle - The March of the Black Queen (Japan) (NP) [T-En by FinS v1.2]">
+		<description>Densetsu no Ogre Battle - The March of the Black Queen (Japan) (NP) [T-En by FinS v1.2]</description>
+		<rom name="Densetsu no Ogre Battle - The March of the Black Queen (Japan) (NP) [T-En by FinS v1.2].sfc" size="2097152" crc="2d28c079" md5="53f8533b214504fc746ae3356b56d82d" sha1="55c9e6dd65dbf037d2389f35816655b5de8a4568"/>
 	</machine>
 	<machine name="Dezaemon (Japan) [T-En by Aeon Genesis v1.00] [Add by mwksoul v1.0] [n]">
 		<description>Dezaemon (Japan) [T-En by Aeon Genesis v1.00] [Add by mwksoul v1.0] [n]</description>
@@ -794,9 +803,9 @@
 		<description>Langrisser, Der (Japan) (Rev 1) [T-En by byuu+Derrick Sobodash v1.3]</description>
 		<rom name="Langrisser, Der (Japan) (Rev 1) [T-En by byuu+Derrick Sobodash v1.3].sfc" size="3145728" crc="ce97003b" md5="83a64475cb97fbe0a0ed5dccce34884d" sha1="a78509db86fe24686fe5d84d8d319227f706d8b4"/>
 	</machine>
-	<machine name="Laplace no Ma (Japan) [T-En by Aeon Genesis v0.95b]">
-		<description>Laplace no Ma (Japan) [T-En by Aeon Genesis v0.95b]</description>
-		<rom name="Laplace no Ma (Japan) [T-En by Aeon Genesis v0.95b].sfc" size="2097152" crc="6cdb0dae" md5="08a1495d62af1c0461f54f0354793fb7" sha1="b4cfebe7afa6d5fac1f46aa4cb88e2f13189d2b7"/>
+	<machine name="Laplace's Demon (Japan) [T-En by Aeon Genesis v2.0] [n]">
+		<description>Laplace's Demon (Japan) [T-En by Aeon Genesis v2.0] [n]</description>
+		<rom name="Laplace's Demon (Japan) [T-En by Aeon Genesis v2.0] [n].sfc" size="2097152" crc="6105876c" md5="a7db0b34a245ca1ac0240918339d365c" sha1="b0dfcc096e1c6952c94b2cbcf1e9bbfe71809ac5"/>
 	</machine>
 	<machine name="Last Bible III (Japan) [T-En by Tom v7.0]">
 		<description>Last Bible III (Japan) [T-En by Tom v7.0]</description>

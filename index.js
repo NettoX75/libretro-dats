@@ -4,7 +4,7 @@ const pkg = require('./package')
 const async = require('async')
 const glob = require('multi-glob').glob
 const xml = require('xml2js').Parser()
-const sort = require('sort-object')
+const sortBy = require('sort-array')
 const unidecode = require('unidecode')
 const sanitizeFilename = require('sanitize-filename')
 const dats = require('./dats.json')
@@ -32,16 +32,13 @@ function processDat(datsInfo, name, done) {
 			}
 
 			// Loop through the results and build a game database.
-			var games = {}
+			var games = []
 			for (var i in results) {
 				for (var game in results[i]) {
 					var gameName = results[i][game].title
 					// Do not add BIOS entries.
 					if (gameName.indexOf('[BIOS]') < 0) {
-						while (gameName in games) {
-							gameName = gameName + ' '
-						}
-						games[gameName] = results[i][game]
+						games.push(results[i][game])
 					}
 				}
 			}
@@ -49,10 +46,8 @@ function processDat(datsInfo, name, done) {
 			var output = getHeader(name, pkg)
 
 			// Loop through the sorted games database, and output the rom.
-			for (var game in sort(games)) {
-				var rom = games[game]
-				game = game.trim()
-				output += getGameEntry(game, rom)
+			for (let game of sortBy(games, ['name', 'rom.crc'])) {
+				output += getGameEntry(game)
 			}
 
 			// Save the new DAT file.
@@ -78,9 +73,9 @@ function getHeader(name, pkg) {
 /**
  * Construct a game entry for a DAT file.
  */
-function getGameEntry(game, rom) {
+function getGameEntry(rom) {
 	// Replace Unicode characters, and trim the title.
-	let gameName = unidecode(game).trim();
+	let gameName = unidecode(rom.title).trim();
 
 	// Clean the name some more.
 	gameName = gameName
@@ -101,8 +96,14 @@ function getGameEntry(game, rom) {
 		.replace('Demos (cdi)\\', '')
 		.replace('Demos (elf)\\', '')
 		.replace(' (United States)', ' (USA)')
+		.replace(')(JP)', ') (Japan)')
 		.replace('Applications\\', '')
+		.replace('(demo)', '(Demo)')
 		.replace('&apos;', '\'')
+
+	//for (let year = 1970; year < 2500; year++) {
+	//	gameName = gameName.replace(' (' + year + ')', ' ')
+	//}
 
 	// The filename must be a valid filename.
 	let gameFile = sanitizeFilename(path.basename(unidecode(rom.name)))
@@ -180,9 +181,9 @@ function getGamesFromXml(filepath, dat) {
 	games.forEach(function (game, i) {
 		// Set up the entries to watch for.
 		var title = null
-                var largestData = 0
-                var dataTracks = []
-                var finalPrimary = null
+        var largestData = 0
+        var dataTracks = []
+        var finalPrimary = null
 		var finalBin = null
 		var finalIso = null
 		var finalImg = null
